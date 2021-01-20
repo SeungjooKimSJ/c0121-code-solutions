@@ -35,9 +35,9 @@ input {
   width: 400px;
   padding: 0.5rem;
   border: 1px solid;
+  border-color: rgb(216, 227, 232);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: lightgray;
 }
 
 button {
