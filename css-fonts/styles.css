@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  line-height: 1.6;
+}
