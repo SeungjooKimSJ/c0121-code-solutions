@@ -1,0 +1,13 @@
+html {
+  font-size: 22px;
+}
+
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+
+  /* your code here */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.5rem;
+}
