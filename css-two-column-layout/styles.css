@@ -1,0 +1,87 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.intro,
+.main,
+.btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro {
+  flex-direction: column;
+}
+
+h1,
+h3,
+button {
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 3rem 0 1rem 0;
+  letter-spacing: 0.2rem;
+  font-weight: 1000;
+  font-size: 3rem;
+}
+
+h3 {
+  letter-spacing: 0.5px;
+}
+
+p {
+  color: #a1a1a1;
+  font-weight: 500;
+}
+
+.intro p {
+  margin: 0 auto;
+  padding: 1rem 0 3rem 0;
+  width: calc(110% / 3);
+}
+
+.first-row,
+.second-row {
+  width: calc(85% / 3);
+}
+
+.first-row-left,
+.first-row-right,
+.second-row-left,
+.second-row-right {
+  display: flex;
+}
+
+.context {
+  text-align: left;
+  margin: 1rem 2.5rem 2.5rem 0.5rem;
+}
+
+button {
+  background-color: #fff;
+  padding: 0.75rem 3rem;
+  border: 3px solid #dd7b76;
+  color: #dd7b76;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #dd7b76;
+  transition: ease-in 0.4s;
+}
+
+button:active {
+  background-color: #dd7b76;
+  color: #fff;
+}
+
+button:focus {
+  display: none;
+}
