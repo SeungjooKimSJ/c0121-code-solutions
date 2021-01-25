@@ -8,6 +8,7 @@ html {
 
   /* your code here */
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 3.5rem;
+  width: 100%;
 }
