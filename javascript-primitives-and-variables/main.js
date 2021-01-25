@@ -1,31 +1,21 @@
-const firstName = 'Seungjoo';
-const lastName = 'Kim';
-const fullName = firstName + ' ' + lastName;
-console.log('value of fullName:', fullName);
-
-const isCool = fullName === 'Seungjoo Kim';
-console.log('value of isCool:', isCool);
-
+const fullName = 'Seungjoo Kim';
+const isCool = true;
 const totalPets = 1;
+
+console.log('value of fullName:', fullName);
+console.log('value of isCool:', isCool);
 console.log('value of totalPets:', totalPets);
 
-const fullNameType = typeof fullName;
-console.log('typeof fullName:', fullNameType);
-
-const isCoolType = typeof isCool;
-console.log('typeof isCool:', isCoolType);
-
-const totalPetsType = typeof totalPets;
-console.log('typeof totalPets:', totalPetsType);
+console.log('typeof fullName:', typeof fullName);
+console.log('typeof isCool:', typeof isCool);
+console.log('typeof totalPets:', typeof totalPets);
 
 const unknown = null;
-console.log('value of unknown:', unknown);
 
-const unknownType = typeof unknown;
-console.log('typeof unknown:', unknownType);
+console.log('value of unknown:', unknown);
+console.log('typeof unknown:', typeof unknown);
 
 let never;
-console.log('value of never:', never);
 
-const neverTypeof = typeof never;
-console.log('type of never:', neverTypeof);
+console.log('value of never:', never);
+console.log('type of never:', typeof never);
