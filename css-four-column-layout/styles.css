@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+  padding: 0.75rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  /* border: 1px solid red; */
+  position: relative;
+  width: 15%;
+  margin: 0 0.5rem;
+}
+
+.screen-img {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.icon {
+  position: relative;
+  width: 25%;
+  margin: auto;
+}
