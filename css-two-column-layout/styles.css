@@ -5,8 +5,7 @@ body {
 }
 
 .intro,
-.main,
-.btn {
+.main {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -49,10 +48,7 @@ p {
   width: calc(85% / 3);
 }
 
-.first-row-left,
-.first-row-right,
-.second-row-left,
-.second-row-right {
+.column-half {
   display: flex;
 }
 
