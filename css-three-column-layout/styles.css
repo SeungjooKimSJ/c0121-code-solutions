@@ -26,9 +26,7 @@ section.all {
   margin: 0 auto;
 }
 
-.first,
-.second,
-.third {
+.column-third {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,17 +39,20 @@ img {
 
 .three-pics {
   background-color: #fff;
-  position: absolute;
+
+  /* position: absolute; */
   border-radius: 50%;
   padding: 1.5rem;
 }
 
 .text {
   text-align: center;
-  position: relative;
+
+  /* position: relative; */
 
   /* border: 1px solid black; */
-  top: 90%;
+
+  /* top: 90%; */
 }
 
 h3 {
