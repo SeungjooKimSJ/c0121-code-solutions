@@ -24,19 +24,16 @@ h2 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: relative;
   width: 15%;
   margin: 0 0.5rem;
 }
 
 .screen-img {
-  position: relative;
   width: 100%;
   margin: auto;
 }
 
 .icon {
-  position: relative;
   width: 25%;
   margin: auto;
 }
