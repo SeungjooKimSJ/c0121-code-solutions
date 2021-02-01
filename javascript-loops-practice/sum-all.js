@@ -1,21 +1,8 @@
 /* exported sumAll */
 function sumAll(numbers) {
-  var arrNumbers = [];
-  // var i;
+  var sum = 0;
   for (var i = 0; i < numbers.length; i++) {
-    // console.log(numbers[i]);
-    numbers[i] += arrNumbers;
+    sum += numbers[i];
   }
-  return arrNumbers;
+  return sum;
 }
-
-// function sumAll(numbers) {
-//   var arrayNumbers = [];
-//   var currentNumber = 0;
-//   var i;
-//   for (var i = 0; i <= numbers.length; i++) {
-//     console.log(arrayNumbers[i]);
-//     currentNumber+arrayNumbers[i];
-//   }
-//   return arrayNumbers;
-// }

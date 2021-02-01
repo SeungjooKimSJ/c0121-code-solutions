@@ -1,10 +1,10 @@
 /* exported countdown */
 function countdown(number) {
-  var countDown = [];
+  var arr = [];
   var currentNumber = 0;
   while (currentNumber <= number) {
-    countDown.unshift(currentNumber);
+    arr.unshift(currentNumber);
     currentNumber++;
   }
-  return countDown;
+  return arr;
 }
