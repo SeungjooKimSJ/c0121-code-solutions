@@ -1,6 +1,7 @@
 /* exported filterOutStrings */
 function filterOutStrings(values) {
-  return values.filter(function (values) {
-    return typeof values === 'number';
-  });
+  for (var i = values.length - 1; i >= 0; i--) {
+    if (typeof values[i] === 'string') { values.splice(i, 1); }
+  }
+  return values;
 }
