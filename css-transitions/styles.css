@@ -22,6 +22,11 @@ section {
   font-size: 1rem;
   color: white;
   background-color: blue;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: #fe0201;
 }
 
 .card-container {
@@ -37,19 +42,14 @@ section {
   background-color: white;
   cursor: pointer;
   transform: scale(1);
+  transition: transform 0.4s ease-in-out;
 }
 
 .card:hover {
   cursor: pointer;
-  transition: ease-in-out 0.4s;
   transform: scale(1.1);
 }
 
 .card > img {
   width: 100%;
-}
-
-.custom-button:hover {
-  background-color: #fe0201;
-  transition: ease-in-out 0.4s;
 }
