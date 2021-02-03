@@ -39,6 +39,17 @@ section {
   transform: scale(1);
 }
 
+.card:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  transform: scale(1.1);
+}
+
 .card > img {
   width: 100%;
+}
+
+.custom-button:hover {
+  background-color: #fe0201;
+  transition: ease-in-out 0.4s;
 }
