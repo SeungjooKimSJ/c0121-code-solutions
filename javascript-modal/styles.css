@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-#trigger {
+.trigger {
   width: 20vw;
   height: 5vh;
   border: none;
@@ -13,6 +13,64 @@
   box-shadow: 0 2px 4px black;
 }
 
+.trigger:hover {
+  cursor: pointer;
+}
+
+.trigger:focus {
+  display: none;
+}
+
+.modal-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  /* border: 1px solid red; */
+  position: fixed;
+  width: 25vw;
+  height: 25vh;
+  padding-top: 1rem;
+
+  /* position: fixed; */
+  top: 25%;
+  left: 35%;
+
+  /* display: none; */
+  background-color: #fff;
+  z-index: 100;
+}
+
+.no {
+  width: 8vw;
+  height: 5vh;
+  border-radius: 7px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #eb5d5d;
+  box-shadow: 0 2px 4px black;
+  margin-top: 2rem;
+}
+
+.no:hover {
+  cursor: pointer;
+}
+
+.no:focus {
+  display: none;
+}
+
+.modal-content.off {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 

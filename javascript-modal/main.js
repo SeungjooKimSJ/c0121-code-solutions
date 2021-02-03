@@ -1,17 +1,28 @@
+var $trigger = document.querySelector('.trigger');
+var $modalContent = document.querySelector('.modal-content');
+var $no = document.querySelector('.no');
 
-// var clickedBtn = 0;
-// var $btn = document.querySelector('.btn');
-// var $main = document.querySelector('.main');
+$trigger.addEventListener('click', function (event) {
+  $modalContent.className = 'modal-content ' + 'on';
+  // $modalContent.className = 'modal-content ' + 'off';
+});
 
-// $main.addEventListener('click', function (event) {
-//   clickedBtn++;
+$no.addEventListener('click', function (event) {
+  $modalContent.className = 'modal-content ' + 'on';
+});
+
+// var $modalOff = document.querySelector('.modal-content.off');
+
+// var clickBtn = 0;
+
+// $trigger.addEventListener('click', function (event) {
+//   clickBtn++;
 //   var popUp;
 
-//   if (clickedBtn > 0) {
+//   if (clickBtn % 2 === 0) {
 //     popUp = 'off';
 //   } else {
 //     popUp = 'on';
 //   }
-//   $btn.className = 'btn ' + popUp;
-//   $main.textContent = 'Would you like to take a survey?';
+//   $modalContent.className = 'modal-content ' + popUp;
 // });
