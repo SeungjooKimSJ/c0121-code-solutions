@@ -66,7 +66,7 @@ pkmCard.setAttribute('class', 'pokemon-card');
 columnThird.appendChild(pkmCard);
 
 var images = document.createElement('img');
-images.setAttribute('src', pokedex.imageUrl);
+images.setAttribute('src', pokedex[1].imageUrl);
 pkmCard.appendChild(images);
 
 var pkmCardText = document.createElement('div');
@@ -74,17 +74,17 @@ pkmCardText.setAttribute('class', 'pokemon-card-text');
 pkmCard.appendChild(pkmCardText);
 
 var newh2 = document.createElement('h2');
-var newh2Text = document.createTextNode(pokedex.name);
+var newh2Text = document.createTextNode(pokedex[1].name);
 newh2.appendChild(newh2Text);
 pkmCardText.appendChild(newh2);
 
 var newh3 = document.createElement('h3');
-var newh3Text = document.createTextNode('#' + pokedex.number);
+var newh3Text = document.createTextNode('#' + pokedex[1].number);
 newh3.appendChild(newh3Text);
 pkmCardText.appendChild(newh3);
 
 var newP = document.createElement('p');
-var pText = document.createTextNode(pokedex.description);
+var pText = document.createTextNode(pokedex[1].description);
 newP.appendChild(pText);
 pkmCardText.appendChild(newP);
 
