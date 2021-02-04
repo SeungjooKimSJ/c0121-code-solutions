@@ -1,5 +1,3 @@
-// const { formatters } = require("stylelint");
-
 var $contactForm = document.querySelector('#contact-form');
 
 function clickedSubmit(event) {
