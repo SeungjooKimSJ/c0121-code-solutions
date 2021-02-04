@@ -3,8 +3,8 @@
 }
 
 #trigger {
-  width: 12vw;
-  height: 5vh;
+  width: 220px;
+  height: 50px;
   border: none;
   border-radius: 7px;
   font-size: 1.5rem;
@@ -15,10 +15,6 @@
 
 #trigger:hover {
   cursor: pointer;
-}
-
-#trigger:focus {
-  display: none;
 }
 
 .modal-content {
@@ -41,8 +37,8 @@
 }
 
 .no {
-  width: 8vw;
-  height: 5vh;
+  width: 120px;
+  height: 50px;
   border-radius: 7px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -63,7 +59,8 @@
 
 .active {
   position: fixed;
-  opacity: 0;
+
+  /* opacity: 0; */
   top: 0;
   left: 0;
   right: 0;
@@ -73,5 +70,5 @@
 }
 
 .active.off {
-  opacity: 1;
+  /* opacity: 1; */
 }
