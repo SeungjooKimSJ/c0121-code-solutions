@@ -2,22 +2,26 @@ var $tabContainer = document.querySelector('.tab-container');
 var $tab = document.querySelectorAll('.tab');
 var $view = document.querySelectorAll('.view');
 
-$tabContainer.addEventListener('click', function () {
-  // console.log('event.target:', event.target);
-  // console.log('event.target.matches:', event.target.matches('.tab'));
+$tabContainer.addEventListener('click', function (event) {
 
-  for (var i = 0; i < $tab.length; i++) {
-    $tab[i].matches('.tab');
-    $tab[i].className = 'tab ' + 'active';
-    // if (event.target.tagName === 'DIV')
-    // $tab[i].className = 'tab ' + 'active';
-  }
+  if (event.target.matches('.tab')) {
+    for (var i = 0; i < $tab.length; i++) {
+      if ($tab[i] === event.target) {
+        $tab[i].className = 'tab active';
+      } else {
+        $tab[i].className = 'tab';
+      }
+    }
 
-  var $dataView = document.querySelectorAll('data-view');
+    var $dataView = event.target.getAttribute('data-view');
 
-  for (var j = 0; j < $view.length; j++) {
-    $dataView[j].matches('.data-view');
-    $view.className = 'view ' + 'hidden';
+    for (var j = 0; j < $view.length; j++) {
+      if ($view[j].getAttribute('data-view') !== $dataView) {
+        $view[j].className = 'view hidden';
+      } else {
+        $view[j].className = 'view';
+      }
+    }
   }
 
 });
