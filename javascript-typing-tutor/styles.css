@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.typing {
+  border: 1px solid red;
+}
+
+h1 {
+  font-family: 'Pangolin', cursive;
+  letter-spacing: 3px;
+}
+
+.cursor {
+  color: #f80606;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.done {
+  color: #1cce1f;
+}
