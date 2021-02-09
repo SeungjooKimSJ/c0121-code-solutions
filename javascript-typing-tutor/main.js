@@ -1,8 +1,7 @@
 // var $typing = document.querySelector('.typing');
 // var $quoteDisplay = document.querySelector('.quote-display');
 
-// $quoteDisplay.textContent = 'grumpy wizards make toxic brew';
-// var $h1Text = $quoteDisplay.textContent;
+// var $h1Text = 'grumpy wizards make toxic brew';
 
 // var $characters = $h1Text.split('').map(function (word) {
 //   var $span = document.createElement('span');
@@ -35,32 +34,14 @@ for (var i = 0; i < $quoteString.length; i++) {
 
 var spanIndex = 0;
 var $spanAll = document.querySelectorAll('span');
-var $spanCharacter = $spanAll[0];
+var $spanCharacter = $spanAll[spanIndex];
 
 document.addEventListener('keydown', function ({ key }) {
-  for (var j = 0; j < $quoteString.length; j++) {
-    if (key === $spanCharacter.textContent) {
-      $spanCharacter.className = 'done';
-      $spanCharacter = $spanAll[++spanIndex];
-    } else {
-      $spanCharacter.className = 'cursor';
-    }
+  if (key === $spanCharacter.textContent) {
+    $spanCharacter.className = 'done';
+    spanIndex++;
+    $spanCharacter = $spanAll[spanIndex];
+  } else {
+    $spanCharacter.className = 'cursor';
   }
 });
-
-// var spanIndex = 0;
-// var $spanAll = document.querySelectorAll('span');
-// var $spanCharacter = $spanAll[0];
-
-// document.addEventListener('keydown', function ({key}) {
-//   for (var j = 0; j < $spanCharacter.length; j++) {
-//     $spanCharacter[j].className = 'next';
-//   }
-
-//     if (key === $spanCharacter.textContent) {
-//       $spanCharacter.className = 'done';
-//       $spanCharacter = $spanAll[++spanIndex];
-//     } else {
-//       $spanCharacter.className = 'cursor';
-//     }
-// });
