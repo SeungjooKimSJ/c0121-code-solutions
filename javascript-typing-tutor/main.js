@@ -17,6 +17,7 @@ document.addEventListener('keydown', function ({ key }) {
     spanIndex++;
     $spanCharacter = $spanAll[spanIndex];
   } else {
-    $spanCharacter.className = 'cursor';
+    $spanCharacter.className = 'not-done';
   }
+
 });

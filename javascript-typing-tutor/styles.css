@@ -14,10 +14,10 @@ h1 {
   letter-spacing: 3px;
 }
 
-.cursor {
+.not-done {
   color: #f80606;
   text-decoration: underline;
-  padding-bottom: 1rem;
+  border-bottom: 1rem;
 }
 
 .done {
