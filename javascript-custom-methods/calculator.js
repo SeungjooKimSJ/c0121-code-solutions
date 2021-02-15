@@ -30,12 +30,12 @@ var calculator = {
   },
 
   getAverage: function (numbers) {
-    var avg = 0;
-    var indexLength = numbers.length;
+    var sum = 0;
+    var arrLength = numbers.length;
 
     for (var j = 0; j < numbers.length; j++) {
-      avg += numbers[j] / indexLength;
+      sum += numbers[j];
     }
-    return avg;
+    return sum / arrLength;
   }
 };
