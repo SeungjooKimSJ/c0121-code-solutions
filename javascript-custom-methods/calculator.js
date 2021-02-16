@@ -1,23 +1,28 @@
 /* exported calculator */
 var calculator = {
   add: function (x, y) {
-    return x + y;
+    var sum = x + y;
+    return sum;
   },
 
   subtract: function (x, y) {
-    return x - y;
+    var difference = x - y;
+    return difference;
   },
 
   multiply: function (x, y) {
-    return x * y;
+    var product = x * y;
+    return product;
   },
 
   divide: function (x, y) {
-    return x / y;
+    var quotient = x / y;
+    return quotient;
   },
 
   square: function (x) {
-    return x * x;
+    var squared = x * x;
+    return squared;
   },
 
   sumAll: function (numbers) {
@@ -31,11 +36,10 @@ var calculator = {
 
   getAverage: function (numbers) {
     var sum = 0;
-    var arrLength = numbers.length;
 
     for (var j = 0; j < numbers.length; j++) {
       sum += numbers[j];
     }
-    return sum / arrLength;
+    return sum / numbers.length;
   }
 };
