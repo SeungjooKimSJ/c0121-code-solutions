@@ -7,10 +7,12 @@ var student = {
   subject: 'subject',
 
   getFullName: function () {
-    return this.firstName + ' ' + this.lastName;
+    var fullName = this.firstName + ' ' + this.lastName;
+    return fullName;
   },
 
   getIntroduction: function () {
-    return 'Hello, my name is ' + this.firstName + ' ' + this.lastName + ' and I am studying ' + this.subject + '.';
+    var introduction = 'Hello, my name is ' + this.firstName + ' ' + this.lastName + ' and I am studying ' + this.subject + '.';
+    return introduction;
   }
 };
