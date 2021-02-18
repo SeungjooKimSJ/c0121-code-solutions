@@ -17,10 +17,6 @@ body {
   margin: 5rem auto;
 }
 
-/* .pictures.active {
-  position: relative;
-} */
-
 .pictures.inactive {
   display: none;
 }
@@ -35,7 +31,8 @@ img {
   cursor: pointer;
   position: absolute;
   top: 30%;
-  color: #ffffff;
+  color: #fff;
+  transition: ease-in 0.7s;
 }
 
 .arrows-left {
@@ -46,11 +43,9 @@ img {
   right: 20%;
 }
 
-.dots {
-  position: absolute;
-  bottom: 8%;
-  left: 40%;
-  color: #ffffff;
+.arrows-left:hover,
+.arrows-right:hover {
+  color: burlywood;
 }
 
 .pictures h3 {
@@ -59,15 +54,7 @@ img {
   top: 8%;
   left: 5%;
   margin: 0;
-  color: #ffffff;
-  opacity: 0;
-}
-
-/* .pictures.active {
-
-} */
-
-.pictures.active h3 {
+  color: #fff;
   opacity: 1;
 }
 
@@ -76,5 +63,9 @@ img {
   top: 45%;
   left: 44%;
   margin: 0.5rem;
-  color: #ffffff;
+  color: #fff;
 }
+
+/* .dots:hover {
+  color: burlywood;
+} */
