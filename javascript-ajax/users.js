@@ -4,6 +4,7 @@ function getUserList(name) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
   xhr.responseType = 'json';
+
   xhr.addEventListener('load', function () {
     console.log('xhr.status:', xhr.status);
     console.log('xhr.respone:', xhr.response);
