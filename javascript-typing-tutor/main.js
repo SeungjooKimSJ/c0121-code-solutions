@@ -12,6 +12,7 @@ var $spanAll = document.querySelectorAll('span');
 var $spanCharacter = $spanAll[spanIndex];
 
 document.addEventListener('keydown', function ({ key }) {
+
   if (key === $spanCharacter.textContent) {
     $spanCharacter.className = 'done';
     spanIndex++;
