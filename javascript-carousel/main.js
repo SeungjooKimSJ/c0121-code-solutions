@@ -38,7 +38,11 @@ function autoSlide() {
 
 setInterval(autoSlide, 3000);
 
+
+// var $dotsContainer = document.querySelector('.dots-container');
+// var currentDots = 0;
+
 // $dots.addEventListener('click', function () {
-// event.target === $dots[i];
-// and then logic !!!!!!!!!!
-// })
+//   event.target === $dots[i];
+//   and then logic !!!!!!!!!!;
+// });
