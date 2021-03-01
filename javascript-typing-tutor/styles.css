@@ -24,6 +24,10 @@ h1 {
   color: #1cce1f;
 }
 
-/* .next {
+span:first-child {
   border-bottom: 3px solid #000;
+}
+
+/* span.inactive {
+  border: none;
 } */
