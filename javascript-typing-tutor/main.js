@@ -14,7 +14,7 @@ var $spanCharacter = $spanAll[spanIndex];
 document.addEventListener('keydown', function ({ key }) {
 
   if (key === $spanCharacter.textContent) {
-    $spanCharacter.className = 'done';
+    $spanCharacter.className = ('done + inactive');
     spanIndex++;
     $spanCharacter = $spanAll[spanIndex];
     $spanAll[spanIndex].className = 'underbar';
