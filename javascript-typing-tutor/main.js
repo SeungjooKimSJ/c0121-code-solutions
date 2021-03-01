@@ -17,8 +17,8 @@ document.addEventListener('keydown', function ({ key }) {
     $spanCharacter.className = 'done';
     spanIndex++;
     $spanCharacter = $spanAll[spanIndex];
+    $spanAll[spanIndex].className = 'underbar';
   } else {
     $spanCharacter.className = 'not-done';
   }
-
 });

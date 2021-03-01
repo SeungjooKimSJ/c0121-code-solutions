@@ -24,7 +24,7 @@ h1 {
   color: #1cce1f;
 }
 
-span:first-child {
+.underbar {
   border-bottom: 3px solid #000;
 }
 
